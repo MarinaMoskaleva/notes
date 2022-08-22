@@ -14,7 +14,7 @@ const VKontakteStrategy = require('passport-vkontakte').Strategy;
 passport.use(new VKontakteStrategy({
     clientID:     '51406037',
     clientSecret: 'dVUauwh2KgECFORlpmFr',
-    callbackURL:  "http://localhost:3000/auth/vkontakte/callback"
+    callbackURL:  "https://diploma.timers.fun/auth/vkontakte/callback"
   },
   function(accessToken, refreshToken, params, profile, done) {
     return done(null, profile);
